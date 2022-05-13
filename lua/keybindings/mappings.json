@@ -1,0 +1,35 @@
+{
+  "opts": {
+    "noremap": true,
+    "silent": true
+  },
+  "maps": {
+    "n": {
+      "<leader><leader>": "<Cmd>lua require('telescope').extensions.frecency.frecency()<CR>",
+      "<C-b>": "<cmd> lua require('lspsaga.action').smart_scroll_with_saga(-1)<CR>",
+      "<C-f>": "<cmd> lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>",
+      "<C-p>": ":Telescope template_actions<CR>",
+      "<C-m>": ":Lspsaga code_action<CR>",
+      "<C-n>": ":NvimTreeToggle<CR>",
+      "<leader>cc": "<cmd> lua require('lspsaga.diagnostic').show_cursor_diagnostics()<CR>",
+      "<leader>cd": "<cmd> lua require('lspsaga.diagnostic').show_line_diagnostics()<CR>",
+      "<leader>fb": "<cmd>lua require('telescope.builtin').buffers()<cr>",
+      "<leader>ff": "<cmd>lua require('telescope.builtin').find_files()<cr>",
+      "<leader>fg": "<cmd>lua require('telescope.builtin').live_grep()<cr>",
+      "<leader>fh": "<cmd>lua require('telescope.builtin').help_tags()<cr>",
+      "<leader>pp": "<cmd> :lua require'telescope'.extensions.project.project{}<CR>",
+      "F": "<cmd> lua vim.lsp.buf.formatting() <CR>",
+      "K": "<cmd> lua require'lspsaga.provider'.preview_definition()<CR>",
+      "gb": "<cmd>lua require('telescope.builtin').git_branches{}<cr>",
+      "gbg": "<cmd>lua require('telescope.builtin').git_bcommits{}<cr>",
+      "gc": "<cmd>lua require('telescope.builtin').git_commits{}<cr>",
+      "gd": "<cmd> lua vim.lsp.buf.definition()<CR>",
+      "ld": "<cmd> lua vim.lsp.buf.definition()<CR>",
+      "gh": "<cmd> lua require('lspsaga.signaturehelp').signature_help()<CR>",
+      "gp": "<cmd> lua require('lspsaga.provider').preview_definition()<CR>",
+      "gs": "<cmd>lua require('telescope.builtin').git_status{}<cr>",
+      "rr": "<cmd> lua require('lspsaga.rename').rename()<CR>"
+    }
+  }
+}
+
